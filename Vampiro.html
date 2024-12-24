@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase: Vampiro</title>
+    <link rel="stylesheet" href="vampiro.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=MedievalSharp&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+    <div class="hoja1">
+        
+        <div class="izquierda">
+            <h1 class="medievalsharp-regular">Dungeon World</h1>
+            <table class="tabla">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Valor</th>
+                    <th>Mod</th>
+                    <th>Debilidad</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="stats">FUE</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Debilitado</td>
+                </tr>
+                <tr>
+                    <td class="stats">CON</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Enfermo</td>
+                </tr>
+                <tr>
+                    <td class="stats">DES</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Tembloroso</td>
+                </tr>
+                <tr>
+                    <td class="stats">INT</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Aturdido</td>
+                </tr>
+                <tr>
+                    <td class="stats">SAB</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Confundido</td>
+                </tr>
+                <tr>
+                    <td class="stats">CAR</td>
+                    <td></td>
+                    <td></td>
+                    <td>-1 Marcado</td>
+                </tr>                        
+            </tbody>
+            <table>
+                <tbody>
+                    <tr>              
+                        <td class="td-puntos">16 (+2).</td>
+                        <td class="td-puntos">15 (+1).</td>
+                        <td class="td-puntos">13 (+1).</td>
+                        <td class="td-puntos">12 (+0).</td>
+                        <td class="td-puntos">9 (+0).</td>
+                        <td class="td-puntos">8 (-1).</td>                               
+                    </tr>                        
+                </tbody>                
+            </table>
+
+                <div>
+                    <h3>Clan</h3>
+                    <div class="linea"> <input type="checkbox"> Brujah </div>
+
+                    <p class="p-raza">Este clan está formado en gran parte por rebeldes, con o sin causa. Individualistas, locuaces y turbulentos, los Brujah sienten mucho afecto por la idea del cambio social, y en sus filas albergan a algunos de los más violentos vampiros.</p>
+
+                    <div class="linea"> <input type="checkbox"> Malkavian</div>
+
+                    <p class="p-raza">Hasta los más Condenados temen a los Malkavian. La sangre maldita de su clan ha contaminado sus mentes, con el resultado de que todos ellos estan irremediablemente locos.</p>
+
+                    <div class="linea"> <input type="checkbox"> Nosferatu </div>
+
+                    <p class="p-raza">Mientras los demás Vástagos siguen pareciendo humanos y pueden mezclarse con la sociedad mortal, los Nosferatu están retorcidos y desfigurados por la maldición del vampirismo.</p>
+                </div>
+
+                <div>
+                    <h3 class="vinculos">Alineamiento</h3>
+
+                    <div class="linea"> <input type="checkbox"> Bueno </div>
+                    <p class="p-raza">A pesar de lo que implique tu clan, deseas la armonia entre otras razas y clanes.</p>
+
+                    <div class="linea"> <input type="checkbox"> Malvado </div>
+                    <p class="p-raza">A ti si que no te importa nada, solo buscas sangre y no de cualquiera...de los debiles es tu favorita.</p>
+
+                    <div class="linea"> <input type="checkbox"> Caotico </div>
+                    <p class="p-raza">Tu unica motivacion, incluso mas fuerte que tu sed, es tu necesidad de hacer este mundo uno dvertido, a cualquier costo.</p>
+                </div>
+
+                <div>
+                    <h3 class="vinculos">Vinculos</h3>
+                    <p class="p-vinculos">Rellena al menos uno de los espacios en blanco 
+                        con el nombre de uno de tus compañeros:</p>
+                    <p class="p-raza"><input type="checkbox">Le enseñare a ____________ el placer de la locura.</p>
+                    <p class="p-raza"><input type="checkbox">Tengo asuntos pendientes con _________ algun dia lo resolveremos a las buenas o a las malas.</p>
+                    <p class="p-raza"><input type="checkbox">Necesito alimentarme de ____________ LO NECESITO!!.</p>
+                </div>
+        </div>
+        
+        <div class="derecha">
+            <section>
+                <p class="nombre">Nombre:</p>
+                <div class="datos">           
+                    <p class="clase-nombre">Vampiro</p> 
+                    <p class="nivel-px">Nivel</p> 
+                    <p class="nivel-px">PX</p>
+                </div>
+                
+                <div class="datos">           
+                    <p class="p-pg-arm-daño">PG</p> 
+                    <p class="p-pg-arm-daño">Armadura</p> 
+                    <p class="p-pg-arm-daño">Daño</p>
+                    <i class="fa-solid fa-dice-d6 posicion-dado"></i>
+                </div> 
+                <p class="p-constitucion">Constitucion +4</p>
+            </section>
+        
+
+            <div class="movimientos-especiales">
+                <h3 class="movimientos">Movimientos Especiales: </h3>
+
+                <div class="level-1"> <input type="checkbox"> Depredacion: </div>
+                <p class="p-habilidades"> Cuando entres en este estado, tira con +DES. * Con 10+ eliges un enemigo o aliado y lo muerdes con éxito haciéndole 1d4, * Con 7-9 eliges un enemigo y lo muerdes haciendo 1d4 pero el enemigo logra zafarse y contraatacar, Con 1-6 * Tus colmillos y sobre todo tu velocidad fallan, el DJ te dira que peligro conlleva.</p>
+                
+                <div class="level-1"> <input type="checkbox"> Hijo de la noche: </div>
+                <p class="p-habilidades">En la noche tus sentidos se agudizan aún más que en tu forma diurna, puedes ver en la oscuridad y seguir el olor de tus presas a varios kilómetros, tu DES y FUE también aumentan en +1.
+                De dia te sientes debilitado y le restas -1 a DES y FUE.
+                </p>  
+
+                <div class="level-1"> <input type="checkbox"> CambiaFormas: </div>
+                <p class="p-habilidades">
+                    Tira +SAB *con 10+ te transformas con éxito, *Con 7-9 te transfromas pero te pones en peligro, *Con 2-6 no te transformas y te pones en peligro.
+                    Elije de esta lista para transformarte en una sola forma: <br>                     
+                </p>
+                <ul>
+                    <li>Niebla</li>
+                    <li>Murciélago</li>
+                    <li>Rata</li>
+                    <li>Serpiente</li>
+                </ul>
+                <p class="p-habilidades">Si fallas te pones en peligro.</p>
+
+                <div class="level-1"> <input type="checkbox"> invocar familiar: </div>
+                <p class="p-habilidades">
+                    Tira +SAB *con 10+ tienes 3 puntos, *Con 7-9 tienes 1 punto, *Con 2-6 fallas y te expones a un peligro.
+                    Elije 1 por punto: <br>
+                </p>
+                <ul>
+                    <li>Rata</li>
+                    <li>Murciélago </li>
+                    <li>Serpiente</li>
+                </ul>
+                <p class="p-habilidades">Puedes ordenarles atacar, interferir o ayudar.</p>
+
+                <div class="level-1"> <input type="checkbox"> Vampirismo: </div>
+                <p class="p-habilidades">
+                    Necesitas beber sangre al menos una vez al dia, al beber sangre en cualquier momento te recuperas 1d4 de daño.
+                </p>
+            </div>
+
+            <div class="inventario">
+                <div class="encabezado-equipo">
+                    <p class="p-equipo">Equipo</p>
+                    <p class="p-carga">Carga</p>
+                    <input type="checkbox" class="grande">
+                </div>
+                <div>
+                    <p class="p-habilidades">
+                    Tu carga es 9 +fue. Empiezas con: equipo de 
+                    aventurero (5 usos, peso 1) y 1 poción curativa (peso 0). <br> <br>Elige dos:
+                    </p>
+                    <div class="p-habilidades"> <input type="checkbox"> Daga(peso 1) </div>
+                    <div class="p-habilidades"> <input type="checkbox"> Espada medioalcance (peso2) </div>
+                    <div class="p-habilidades"> <input type="checkbox"> Frasco de Sangre (2 usos, 1 peso) </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hoja2">
+        <p class="titulo-movimientos-lvl">
+            Movimientos avanzados de vampiro: <br>
+        </p>
+        <p>
+            Cuando subas a un nivel entre 2 y 5, elige uno de los siguientes movimientos: <br>
+        </p>
+        <div class="lvl-2a5">
+            
+            <div class="tabla-movimientos">
+
+                <div class="habilidad-delvl"><input type="checkbox">Sombra Efímera</div>
+
+                <p class="p-mov-delvl">Puedes desaparecer en las sombras durante un breve momento. Cuando te encuentras en un lugar con poca luz o oscuridad, puedes desaparecer en las sombras y moverte a una posición que no esté a la vista de los enemigos. Esta acción consume 1d4 de tu energía vital, reduciendo tu salud.</p>
+
+                <div class="habilidad-delvl"><input type="checkbox">Control de la Mente</div>
+
+                <p class="p-mov-delvl">Como maestro de la persuasión, puedes controlar la voluntad de una víctima. Cuando alimentas tu sed de sangre con un ser consciente, puedes forzar a alguien a realizar una acción simple (como decir una verdad, entregarte un objeto, etc.), a cambio de un punto de daño por la manipulación mental.</p>
+              
+                <div class="habilidad-delvl"><input type="checkbox">Fuerza Sobrehumana</div>
+
+                <p class="p-mov-delvl">El vampiro tiene una fuerza mucho mayor que la de un humano promedio. Puedes levantar o destruir objetos que normalmente te resultarían imposibles de mover, e incluso realizar ataques devastadores en combate cuerpo a cuerpo. Los ataques cuerpo a cuerpo infligen 1d6 más daño adicional por cada nivel superior.</p>
+               
+                
+                <div class="habilidad-delvl"><input type="checkbox">Danza Mortal</div>
+                    
+                <p class="p-mov-delvl">La agilidad y la gracia sobrenatural del vampiro le permiten moverse entre los enemigos con facilidad. Cuando te mueves de manera ofensiva, puedes hacer una tirada de destreza para evadir ataques mientras atacas, causando que tus enemigos fallen sus intentos de defensa en ese turno.</p>
+             
+                
+                <div class="habilidad-delvl"><input type="checkbox">Renacer del Silencio</div>
+
+                <p class="p-mov-delvl">Tras una muerte o debilitamiento mortal, el vampiro puede regenerarse completamente al consumir la sangre de un ser aún vivo dentro de las próximas 24 horas. Al hacerlo, recupera completamente su salud y revive en el lugar donde se encuentra la sangre, despojándose de cualquier debilidad temporal.</p>               
+            </div> 
+
+            <div class="tabla-movimientos">
+                <div class="habilidad-delvl"><input type="checkbox">Ojo de la Tormenta</div>
+
+                <p class="p-mov-delvl">Los sentidos del vampiro se agudizan a niveles sobrehumanos. Puedes sentir las emociones y pensamientos cercanos de otras criaturas dentro de un rango de 30 pies. Esto te permite leer a las personas con precisión y saber si están mintiendo o intentando ocultar algo importante.</p>
+
+                <div class="habilidad-delvl"><input type="checkbox">Invocación de la Bestia</div>
+
+                <p class="p-mov-delvl">El vampiro puede invocar a una bestia sobrenatural de las sombras que pelea a su lado durante un corto periodo. La criatura es formidable, pero desaparece al final de la batalla, dejando al vampiro vulnerable hasta que la bestia pueda ser invocada nuevamente.</p>
+              
+                <div class="habilidad-delvl"><input type="checkbox">Maestro de la Muerte</div>
+
+                <p class="p-mov-delvl">El vampiro tiene la capacidad de traer de vuelta a un muerto reciente. Al beber la sangre de un ser recientemente fallecido, el vampiro puede resucitarlo como un esclavo bajo su control, pero con la conciencia y la voluntad del muerto distorsionadas. Los resucitados duran solo 1d6 días antes de comenzar a descomponerse o rebelarse.</p>
+               
+                
+                <div class="habilidad-delvl"><input type="checkbox">Sangre Venenosa</div>
+                    
+                <p class="p-mov-delvl">Tu sangre tiene un poder corrosivo que puede afectar tanto a tus enemigos como a tu entorno. Cuando mordes a un enemigo, puedes inyectar una dosis de veneno mortal en su sistema. Este veneno inflige 1d6 de daño adicional durante 1d4 turnos. El objetivo puede intentar resistir el veneno con una tirada de constitución, pero si no lo consigue, sufre el daño completo.</p>
+             
+                
+                <div class="habilidad-delvl"><input type="checkbox"> Euforia Vampírica</div>
+                
+                <p class="p-mov-delvl">Puedes liberar una oleada de poder y caos dentro de ti mismo y tus aliados cercanos. Al alimentar tu sed de sangre y liberar la energía contenida, todos los vampiros o criaturas que estén cerca de ti (dentro de 10 pies) experimentan un aumento temporal de fuerza y velocidad. Durante el siguiente combate, tus aliados reciben +1 de daño adicional y +1 en sus tiradas de destreza o fuerza. Sin embargo, esta habilidad puede agotarte rápidamente, y después de usarla, debes descansar o sufrirás una penalización en tus tiradas durante el siguiente combate. <br>
+
+                Estas habilidades proporcionan al vampiro un control aún mayor sobre las mentes de sus enemigos y una capacidad para fortalecer tanto su propio poder como el de aquellos a su alrededor.</p> 
+            </div>              
+        </div>
+
+            <p>
+                Cuando subas a un nivel entre 6 y 9, elige uno de los siguientes movimientos: <br>
+            </p>
+        <div class="lvl-2a5">
+            
+            <div class="tabla-movimientos">
+
+                <div class="habilidad-delvl"><input type="checkbox">Manto de Sombras</div>
+
+                <p class="p-mov-delvl">Puedes envolverte en una capa de sombras que te otorga inmunidad temporal a los ataques físicos. Durante un breve periodo (1d6 turnos), puedes moverte y actuar sin que los ataques de los enemigos te afecten, pero no puedes usar armas ni habilidades mágicas mientras esta habilidad esté activa.</p>
+
+                <div class="habilidad-delvl"><input type="checkbox">La Sed Eterna</div>
+
+                <p class="p-mov-delvl">Tu necesidad de sangre se ha vuelto insaciable. Puedes absorber energía vital de cualquier ser cercano, ya sea por contacto o de manera indirecta (como por medio de un objeto o a través de un hechizo). Esto te otorga 1d6 de salud y un punto adicional de poder en tu próxima habilidad. Este poder puede agotarte, dejándote vulnerable durante un breve periodo después de usarlo.</p>
+              
+                <div class="habilidad-delvl"><input type="checkbox">Control del Clima</div>
+
+                <p class="p-mov-delvl">Como maestro de las sombras, puedes alterar temporalmente el clima a tu favor. Puedes oscurecer el cielo, generar niebla densa o incluso hacer que caigan lluvias torrenciales. Esta habilidad dura 1 hora y te otorga ventaja en cualquier enfrentamiento que ocurra bajo condiciones meteorológicas extremas, ya que la oscuridad o la niebla dificultan las acciones de tus enemigos.</p>
+               
+                
+                <div class="habilidad-delvl"><input type="checkbox">Despedazar el Alma</div>
+                    
+                <p class="p-mov-delvl">Tu control sobre la vida y la muerte te permite dañar las almas de tus enemigos. Al morder a una víctima, puedes canalizar un ataque sobrenatural hacia su alma, causando que su cuerpo se sienta como si fuera atravesado por una fuerza invisible. Esto inflige 1d10 de daño y provoca que la víctima reciba una penalización en sus habilidades físicas hasta que recupere su alma de este daño.</p>
+             
+                
+                <div class="habilidad-delvl"><input type="checkbox">Lluvia de Sangre</div>
+
+                <p class="p-mov-delvl">Con un gesto, puedes hacer que llueva sangre en un área de hasta 20 pies de radio. Mientras la lluvia cae, puedes invocar y controlar a las criaturas de la oscuridad, como sombras, espectros o demonios menores. Durante este evento, tus enemigos tienen desventaja en todas las acciones que realicen bajo la lluvia.</p>               
+            </div> 
+
+            <div class="tabla-movimientos">
+                <div class="habilidad-delvl"><input type="checkbox">Vampiro Inmortal</div>
+
+                <p class="p-mov-delvl">Has alcanzado el nivel más alto de resistencia a la muerte. Tu cuerpo ya no puede morir por medios convencionales; puedes ser herido gravemente o incluso destruido, pero al consumir sangre fresca, tu cuerpo se regenerará completamente en 1d6 horas. Sin embargo, si no consigues sangre en ese tiempo, tu forma se desintegrará por completo.</p>
+
+                <div class="habilidad-delvl"><input type="checkbox">Dios de la Noche</div>
+
+                <p class="p-mov-delvl">Has alcanzado el poder absoluto en la oscuridad. Puedes convertir un área completa en absoluta oscuridad, donde solo tú y tus aliados puedan ver. Durante este tiempo, puedes teletransportarte instantáneamente dentro de la zona oscura y atacar sin ser visto, causando desventaja a todos los enemigos dentro del área.</p>
+              
+                <div class="habilidad-delvl"><input type="checkbox">Rugido Infernal</div>
+
+                <p class="p-mov-delvl">Tu grito sobrenatural tiene el poder de invocar a los horrores del inframundo. Al liberar tu voz en un rugido poderoso, puedes desatar criaturas de las profundidades que atacan a tus enemigos o causan pavor en un radio de 30 pies. Esto causa que tus enemigos se paralicen durante un turno o reciban 1d10 de daño psíquico si no logran resistir tu grito con una tirada de voluntad.</p>
+                
+                <div class="habilidad-delvl"><input type="checkbox">Tejedores del Destino</div>
+                
+                <p class="p-mov-delvl">Como maestro de la vida y la muerte, puedes influenciar el destino de una criatura a través de un acto de voluntad. Al tocar a un enemigo o aliado, puedes alterar su destino inmediato de manera significativa. Esto puede tomar la forma de una bendición o maldición, y depende de tu intención. <br>
+                    <UL>
+                        <li>Si decides bendecir a la persona, pueden revertir una acción fallida que hayan cometido recientemente (por ejemplo, un ataque fallido, una tirada de salvación fallida, etc.), o pueden recibir una ventaja significativa en su próxima acción importante.</li>
+                        <li>Si decides maldición, la criatura recibe un efecto negativo en sus acciones, como la imposibilidad de realizar una acción específica o sufrir una penalización grave en sus tiradas (como -2 en su próxima acción).</li>
+                    </UL>   
+                    <p>Este poder puede ser utilizado una vez por descanso largo y tiene efectos devastadores si se utiliza en momentos críticos. Además, alterar el destino viene con un precio: el vampiro puede quedar agobiado por visiones o sufrir una debilidad temporal si usa esta habilidad repetidamente, hasta que recupere su equilibrio.</p> 
+
+                    <div class="habilidad-delvl"><input type="checkbox">Señor de la Nocturna Eternidad</div>
+                    
+                    <p class="p-mov-delvl">Como líder de la oscuridad, puedes controlar las sombras y los muertos a tu antojo. Al invocar esta habilidad, puedes resucitar a cualquier muerto reciente como un sirviente leal, transformándolo en una sombra o un vampiro menor bajo tu mando. Los muertos resucitados permanecen contigo hasta que tú decidas liberarlos.</p>
+            </div>      
+
+        </div>
+
+            <p>
+                Cuando obtengas la habilidad "Señor de la Nocturna Eternidad", Estas habilidades representan el pináculo del poder vampírico. Desde controlar el clima hasta desatar horrores del inframundo, estas habilidades llevan al vampiro a niveles casi divinos, permitiéndole manipular la vida, la muerte, y la oscuridad misma. <br>
+                elige dos de las siguientes habilidades: <br>
+            </p>
+            
+            <div class="tabla-movimientos">
+
+                <div class="habilidad-delvl"><input type="checkbox">Trono de Cenizas</div>
+
+                <p class="p-mov-delvl">Has alcanzado el poder absoluto. Puedes crear un trono de cenizas, una zona donde tu presencia se vuelve tan abrumadora que todos los enemigos en el área deben hacer una tirada de voluntad para no arrodillarse ante ti. Los enemigos que fallen quedarán paralizados por miedo y desorientación. Mientras permanezcas en tu trono, tus habilidades reciben una mejora, como +2 a todas las tiradas de poder.</p>
+            
+                <div class="habilidad-delvl"><input type="checkbox">Infierno Personal</div>
+
+                <p class="p-mov-delvl">Puedes crear un planos de existencia alternativo donde solo tú y aquellos que desees puedan entrar. Este plano es completamente controlado por tu voluntad: el paisaje, el clima, la gravedad, todo se adapta a tu gusto. Puedes usarse como refugio personal o como un campo de batalla donde eres invencible. Este plano dura hasta que decidas que termine.</p>
+            
+                
+                <div class="habilidad-delvl"><input type="checkbox">Cosecha de las Almas</div>
+                    
+                <p class="p-mov-delvl">Has dominado la capacidad de robar las almas de aquellos que caen ante ti. Cuando un enemigo muere a tus manos, puedes tomar su alma y usarla para potenciar tu poder. Cada alma robada te otorga un punto de poder, que puedes gastar para mejorar tus habilidades o aumentar temporalmente tu fuerza, agilidad o invulnerabilidad.</p>
+            
+                
+                <div class="habilidad-delvl"><input type="checkbox">Renacimiento Oscuro</div>
+                
+                <p class="p-mov-delvl">Cuando tu cuerpo físico es destruido, puedes renacer de las sombras en un lugar oscuro cercano. Esta resurrección te permite volver con una nueva forma, eligiendo características de tu apariencia y habilidades, pero siempre manteniendo tu naturaleza vampírica. Este poder se puede usar una vez cada 7 días.</p> 
+                </div>      
+
+                <div class="habilidad-delvl"><input type="checkbox">Maestro del Vacío</div>
+                    
+                <p class="p-mov-delvl">Has alcanzado la capacidad de abrir un portal hacia el vacío absoluto, un espacio donde la existencia misma parece desvanecerse. Cuando abres este portal, todo lo que entre en él es destruido o desintegrado, incluyendo tanto enemigos como objetos. Puedes usarlos para desintegrar completamente a tus enemigos o destruir barreras inquebrantables, pero este poder tiene un precio: la fatiga extrema y una posible pérdida de control sobre el portal.</p> 
+                </div>  
+            </div>         
+    </div>    
+</body>
+</html>
